@@ -1,6 +1,5 @@
 import { IApi } from '@umijs/types';
 
-
 export default (api: IApi) => {
   api.describe({
     key: 'athena',
@@ -27,8 +26,6 @@ export default (api: IApi) => {
 
   api.addEntryImportsAhead(() => {
     const { polyfill } = api.config.athena;
-    return polyfill ? [
-      {source: polyfill}
-    ]: [];
+    return polyfill ? [{ source: polyfill }] : [];
   });
-}
+};
