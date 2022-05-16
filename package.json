@@ -20,7 +20,9 @@
   "scripts": {
     "build": "father-build",
     "lint": "prettier --write '**/*.{js,jsx,tsx,ts,md,json}'",
-    "test": "umi-test"
+    "test": "umi-test",
+    "release:next": "yarn publish --registry https://registry.npmjs.org --tag=next",
+    "release:beta": "yarn publish --registry https://registry.npmjs.org --tag=beta"
   },
   "peerDependencies": {
     "umi": "^3.25.1"

@@ -4,6 +4,9 @@ npm-debug.log*
 yarn-error.log
 package-lock.json
 
+# build
+lib
+
 # umi
 .umi
 .umi-production
@@ -13,4 +16,5 @@ package-lock.json
 # misc
 .DS_Store
 .idea
+.npmrc
 
